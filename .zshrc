@@ -1,18 +1,10 @@
-# environment variable
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home
-
-path=(
-    $JAVA_HOME/bin(N-/)
-    /usr/local/sbin(N-/)
-    $path
-)
-
 # Use color
 autoload -Uz colors
 colors
 
 # alias
 alias ls='ls -FG'
+alias ll='ls -FG -l'
 alias la='ls -FG -a'
 alias lla='ls -FG -la'
 alias vz='vim ~/.zshrc'
@@ -25,8 +17,6 @@ alias py='python'
 alias py3='python3'
 alias va='source venv/bin/activate'
 alias da='deactivate'
-
-alias docroot='/usr/local/var/www'
 
 # Don't logout with ctl+D
 setopt IGNOREEOF
@@ -53,7 +43,7 @@ chpwd() { ls }
 setopt no_beep
 
 # prompt
-PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})%n${reset_color}${fg[cyan]}@%m${reset_color}${fg[yellow]} %~${reset_color}
+PROMPT="%(?.%{${fg[green]}%}.%{${fg[red]}%})%n${reset_color} ${fg[blue]}%d${reset_color}
 > "
 
 # git
