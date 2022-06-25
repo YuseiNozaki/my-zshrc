@@ -2,6 +2,9 @@
 autoload -Uz colors
 colors
 
+# disable r command
+disable r
+
 # alias
 alias ls='ls -FG'
 alias ll='ls -FG -l'
