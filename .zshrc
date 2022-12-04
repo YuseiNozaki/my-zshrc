@@ -12,12 +12,10 @@ alias la='ls -FG -a'
 alias lla='ls -FG -la'
 alias vz='vim ~/.zshrc'
 alias vv='vim ~/.vimrc'
-alias so='source'
 
 alias chrome='open /Applications/Google\ Chrome.app'
 
-alias py='python'
-alias py3='python3'
+alias py='python3'
 alias va='source venv/bin/activate'
 alias da='deactivate'
 
